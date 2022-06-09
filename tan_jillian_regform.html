@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Register For Hogsmeade Field Trip</h1>
+    <h2>Personal Information</h2>
+    <form action="#" method="get">
+        <div>
+            <label for="ufname">First Name:</label>
+            <input 
+                type="text" 
+                name="firstname" 
+                id="ufname" 
+                placeholder="Enter First Name"
+            required>
+            <label for="ulname">Last Name:</label>
+            <input
+                type="text"
+                name="lastname"
+                id="ulname"
+                placeholder="Enter Last Name"
+            required>
+        </div>
+        <br>
+        <div>
+            <label for="emailaddress">Email Address:</label>
+            <input
+                type="email"
+                name="email"
+                id="emailaddress"
+                placeholder="Enter Email"
+            required>
+            <label for="telno">Telephone:</label>
+            <input
+                type="tel"
+                name="telephone"
+                id="telno"
+                placeholder="Enter Phone Number"
+            >
+        </div>
+        <br>
+        <div>
+            <label for="emergencyname">Emergency Contact:</label>
+            <input
+                type="text"
+                name="emergencyname"
+                id="emergencyname"
+                placeholder="Emergency Contact First"
+            >
+        </div>
+        <div>
+            <p>Emergency Contact Relation:</p>
+            <input
+                type="radio"
+                name="emergencycontact"
+                id="emergency1"
+                value="text"
+            >
+            <label for="emergency1">Parent</label>
+
+            <input
+                type="radio"
+                name="emergencyrelation"
+                id="emergency2"
+                value="text"
+            >
+            <label for="emergency2">Sibling</label>
+
+            <input
+                type="radio"
+                name="emergencyrelation"
+                id="emergency3"
+                value="text"
+            >
+            <label for="emergency3">Other</label>
+        </div>
+    
+    <h2>Trip Information</h2>
+        <div>
+            <p>Register for Shopping on:</p>
+            <input 
+                type="date"
+                id="registration"
+                name="regdate"
+                value="yyyy-mm-dd"
+            >
+        </div>
+        <div>
+            <p>Pick up Location:</p>
+            <select id="pickup">
+                <optgroup label="Hogwarts">
+                    <option>Dinning Hall</option>
+                    <option>Chamber of Secrets</option>
+                </optgroup>
+                <optgroup label="Other">
+                    <option>Forbidden Forest</option>
+                    <option>Hagrid's Shack</option>
+                </optgroup>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="trip">I agree to behave on the trip.</label>
+            <input
+                type="checkbox"
+                id="trip"
+                name="behave"
+            required>
+        </div>
+        <div>
+            <label for="future">Tell me about future trips.</label>
+            <input
+                type="checkbox"
+                id="future"
+                name="futuretrips"
+            >
+        </div>
+        <br>
+        <div> <!-- form controls -->
+            <input type="reset" value="Clear">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Day/Night Mode</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+        }
+        .night {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Toggle Day/Night Mode</h1>
+    <p>Click the button to toggle between Day and Night mode.</p>
+    <button 
+        id="btn"
+        type="button" 
+        onclick="nightMode()">Night Mode
+    </button>
+
+    <script>
+        function nightMode() {
+            //Find the button
+            let btn = document.getElementById("btn");
+            //Change button text on click
+            //buttonEl.addEventListener("click", ()=>{
+            if (btn.textContent === "Day Mode") {
+                btn.textContent = "Night Mode"; 
+            } else {
+                btn.textContent = "Day Mode";
+            }
+            let element = document.body;
+            element.classList.toggle('night');
+            }
+    </script>
+</body>
+</html>
